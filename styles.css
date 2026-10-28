@@ -39,7 +39,9 @@ a { color: inherit; }
 
 .hero { padding: 4.5rem 0 3rem; }
 .kicker {
-  margin: 0 0 1rem;
+  position: relative;
+  z-index: 1;
+  margin: 0 0 1.35rem;
   font-size: 0.78rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -50,13 +52,14 @@ h1 {
   font-family: "Instrument Serif", Georgia, serif;
   font-weight: 400;
   font-size: clamp(4.2rem, 12vw, 7.4rem);
-  line-height: 0.86;
+  line-height: 1;
   letter-spacing: -0.045em;
 }
 h1 em {
   font-style: italic;
   background: var(--mark);
-  padding: 0 0.08em;
+  padding: 0 0.06em;
+  line-height: 1;
 }
 .lede {
   max-width: 36rem;
