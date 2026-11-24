@@ -51,7 +51,7 @@ a { color: inherit; }
 .nav nav a { color: var(--muted); text-decoration: none; font-size: 0.92rem; }
 .nav nav a:hover { color: var(--ink); }
 
-.hero { padding: 4.5rem 0 3rem; }
+.hero { padding: 3.2rem 0 0.85rem; }
 .kicker {
   position: relative;
   z-index: 1;
@@ -92,6 +92,11 @@ h1 em {
 .toc ol { margin: 0.35rem 0 0.15rem; padding-left: 1.25rem; }
 .toc a { text-decoration: none; }
 .toc a:hover { text-decoration: underline; }
+.warning {
+  margin: 0.15rem 0 0.85rem;
+  max-width: 40rem;
+  font-weight: 600;
+}
 
 .section-label {
   display: flex;
@@ -119,21 +124,23 @@ h2 {
   letter-spacing: -0.03em;
   scroll-margin-top: 4.6rem;
 }
-.unit { margin: 0.85rem 0 0.15rem; }
+.unit { margin: 0.35rem 0 0; }
 .unit img {
   display: block;
-  width: min(100%, 720px);
-  height: auto;
+  width: min(100%, 560px);
+  height: 168px;
+  object-fit: cover;
+  object-position: center;
   border-radius: 1.1rem;
 }
 .topic:first-of-type { margin-top: 0.3rem; }
 .group {
-  margin: 1.7rem 0 0.7rem;
-  font-size: 0.78rem;
-  font-weight: 500;
-  letter-spacing: 0.12em;
+  margin: 1.15rem 0 0.45rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--ink);
 }
 
 .grid {
@@ -146,10 +153,10 @@ h2 {
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 1.2rem;
-  min-height: 11rem;
-  padding: 1.1rem 1.15rem 1rem;
+  justify-content: flex-start;
+  gap: 0.65rem;
+  min-height: 0;
+  padding: 0.9rem 1rem 0.85rem;
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: 1.1rem;
@@ -212,10 +219,7 @@ details a { color: var(--ink); }
 .btn:hover { background: transparent; color: var(--ink); }
 
 footer {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  flex-wrap: wrap;
+  margin-top: 2.4rem;
   padding: 0 0 2rem;
   color: var(--muted);
   font-size: 0.88rem;
