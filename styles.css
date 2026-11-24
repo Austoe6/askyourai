@@ -9,7 +9,7 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; scroll-padding-top: 4.6rem; }
 body {
   margin: 0;
   font-family: Outfit, ui-sans-serif, system-ui, sans-serif;
@@ -90,6 +90,8 @@ h1 em {
 }
 .steps li, .toc li { margin: 0.55rem 0; }
 .toc ol { margin: 0.35rem 0 0.15rem; padding-left: 1.25rem; }
+.toc a { text-decoration: none; }
+.toc a:hover { text-decoration: underline; }
 
 .section-label {
   display: flex;
@@ -109,6 +111,22 @@ h2 {
   letter-spacing: -0.03em;
 }
 .note { margin: 0 0 1.1rem; color: var(--muted); }
+.topic {
+  margin: 2.6rem 0 0.2rem;
+  font-family: "Instrument Serif", Georgia, serif;
+  font-weight: 400;
+  font-size: 2.15rem;
+  letter-spacing: -0.03em;
+  scroll-margin-top: 4.6rem;
+}
+.unit { margin: 0.85rem 0 0.15rem; }
+.unit img {
+  display: block;
+  width: min(100%, 720px);
+  height: auto;
+  border-radius: 1.1rem;
+}
+.topic:first-of-type { margin-top: 0.3rem; }
 .group {
   margin: 1.7rem 0 0.7rem;
   font-size: 0.78rem;
