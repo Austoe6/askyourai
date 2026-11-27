@@ -89,7 +89,7 @@ h1 em {
   max-width: 40rem;
 }
 .steps li, .toc li { margin: 0.55rem 0; }
-.toc ol { margin: 0.35rem 0 0.15rem; padding-left: 1.25rem; }
+.toc ol { margin: 0.35rem 0 0.15rem; padding-left: 1.25rem; list-style-type: lower-alpha; }
 .toc a { text-decoration: none; }
 .toc a:hover { text-decoration: underline; }
 .warning {
@@ -97,6 +97,7 @@ h1 em {
   max-width: 40rem;
   font-weight: 600;
 }
+.toc .warning { margin: 0; }
 
 .section-label {
   display: flex;
